@@ -13,3 +13,7 @@ output "replication_role_arn" {
 output "replication_policy_arn" {
   value = local.replication_policy_arn
 }
+
+output "locks_table_arn" {
+  value = aws_dynamodb_table.terraform_locks.arn
+}
