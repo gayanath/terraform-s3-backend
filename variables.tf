@@ -9,11 +9,16 @@ variable "replica_bucket_name" {
 
 variable "iam_role_name" {
   type    = string
-  default = "terraform-state-bucket-replication"
+  default = "TerraformStateReplication"
 }
 
 variable "iam_policy_name" {
   type    = string
-  default = "terraform-state-bucket-replication"
+  default = "TerraformStateReplication"
+}
+
+variable "locks_table_name" {
+  type    = string
+  default = "TerraformStateLocks"
 }
 
